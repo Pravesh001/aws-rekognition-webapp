@@ -36,4 +36,4 @@ def success():
         return render_template("success.html",user_image = file_n, name = response )  
       
 if __name__ == '__main__':  
-    app.run(debug = True)  
+    app.run(host = '0.0.0.0', port=80)  
