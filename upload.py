@@ -9,14 +9,14 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = PEOPLE_FOLDER
 
 #readinng aws keys
-with open('pravesh_api_new_user_credentials.csv', 'r') as input:
-    next(input) #goto second line
-    reader = csv.reader(input)
-    for line in reader:
-        access_key_id = line[2] #see file .csv
-        secret_access_key = line[3]
-
-
+#with open('pravesh_api_new_user_credentials.csv', 'r') as input:
+#    next(input) #goto second line
+#    reader = csv.reader(input)
+#    for line in reader:
+#        access_key_id = line[2] #see file .csv
+#        secret_access_key = line[3]
+access_key_id = 'AKIAX6EPIEM6W7IYB5XF'
+secret_access_key = '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'
 
 @app.route('/')  
 def upload():  
